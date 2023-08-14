@@ -4,7 +4,7 @@ import os
 platform_environment = os.environ.get('ENVIRONMENT')
 
 if platform_environment == 'pythonanywhere':
-    BASE_DIR = 'Novas_expanse/data'
+    BASE_DIR = 'Novas_expanse/data/'
 else:
     BASE_DIR = 'data/'
 
