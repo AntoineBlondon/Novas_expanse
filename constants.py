@@ -1,11 +1,21 @@
 from enum import Enum
-TEMPLATE_CHARACTERS_FILE_PATH = "data/template_characters.json"
-PLAYERS_DATA_FILE_PATH = "data/players.json"
-ID_FILE_PATH = "data/ids.json"
-BANNERS_FILE_PATH = "data/banners.json"
-EQUIPMENT_FILE_PATH = "data/equipments.json"
-SCENES_FILE_PATH = "data/story.json"
-BATTLES_FILE_PATH = "data/battles.json"
+import os
+
+platform_environment = os.environ.get('ENVIRONMENT')
+
+if platform_environment == 'pythonanywhere':
+    BASE_DIR = 'Novas_expanse/data'
+else:
+    BASE_DIR = 'data/'
+
+
+TEMPLATE_CHARACTERS_FILE_PATH = BASE_DIR + "template_characters.json"
+PLAYERS_DATA_FILE_PATH =  BASE_DIR + "players.json"
+ID_FILE_PATH =  BASE_DIR + "ids.json"
+BANNERS_FILE_PATH =  BASE_DIR + "banners.json"
+EQUIPMENT_FILE_PATH =  BASE_DIR + "equipments.json"
+SCENES_FILE_PATH =  BASE_DIR + "story.json"
+BATTLES_FILE_PATH =  BASE_DIR + "battles.json"
 
 class Aspect(Enum):
     TIME = "Time"
