@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Admin Panel</title>
+</head>
+<body>
+    {% block content %}{% endblock %}
+  
+  <footer>
+    <div style="margin-left: 10px;">
+      <p>© 2023 Nova's Expanse</p>
+    </div>
+  </footer>
+</body>
+</html>

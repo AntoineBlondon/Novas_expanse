@@ -1,0 +1,34 @@
+<!-- templates/characters.html -->
+{% extends "base.html" %}
+{% block content %}
+<h1>Novas</h1>
+<div class="characters-container">
+    {% for character in characters %}
+        <a href="{{ url_for('character_sheet', id=character.unique_id) }}">
+            <div class="card">
+                <img src="{{ url_for('static', filename='characters/' + character.active_skin) }}" alt="{{ character.name }}">
+                <div class="card-content">
+                    <h2>{{ character.name }}</h2>
+                    <h3>{{ character.aspect }}</h3>
+                    <p>Level: {{ character.level }}</p>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+
+    <div class="d-flex justify-content-center align-items-center">
+        <a class="btn btn-primary" href="/admin/add" role="button" id="add_nova">Add Nova</a>
+    </div>
+
+</div>
+<script>
+    window.addEventListener("wheel", function(e) {
+        const container = document.querySelector('.characters-container');
+        if (e.target === container || container.contains(e.target)) {
+            e.preventDefault();
+            container.scrollLeft += e.deltaY*2;
+        }
+    }, { passive: false });
+</script>
+
+{% endblock %}

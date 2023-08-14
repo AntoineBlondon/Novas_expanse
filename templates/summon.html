@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="banners-container">
+{% for banner in banners %}
+    <a href="{{ url_for('banner_sheet', name=banner.name) }}">
+        <div class="banner-card">
+            <img src="{{ url_for('static', filename='banners/' + banner.image) }}" alt="{{ banner.name }}">
+            <div class="card-content">
+                <h2>{{ banner.name }}</h2>
+                <p>{{ banner.description }}</p>
+            </div>
+        </div>
+    </a>
+{% endfor %}
+</div>
+{% endblock %}

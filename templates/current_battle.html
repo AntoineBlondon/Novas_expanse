@@ -1,0 +1,80 @@
+<!-- templates/current_battle.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nova's Expanse</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+    .battle-plan-row-highlighted {
+      background-color: blue;
+    }
+    
+    .battle-plan-row {
+      background-color: cornflowerblue;
+    }
+  </style>
+</head>
+<body>
+
+<div class="battle-enemies-container d-flex justify-content-center align-items-center">
+    {% for enemy in enemies %}
+        {% if enemy.health > 0 %}
+        <div class="battle-enemies-item">
+            <img class="battle-enemies-image" src="{{ url_for('static', filename='characters/' + get_character_of_player(enemy.owner, enemy.unique_id).active_skin) }}">
+            <p>{{ names[enemy.unique_id] }} / {{ enemy.health }}</p>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<br>
+
+<div class="battle-allies-container d-flex justify-content-center align-items-center">
+    {% for ally in allies %}
+        {% if ally.health > 0 %}
+        <div class="battle-allies-item">
+            <img class="battle-allies-image" src="{{ url_for('static', filename='characters/' + get_character_of_player(ally.owner, ally.unique_id).active_skin) }}">
+            <p>{{ names[ally.unique_id] }} / {{ ally.health }}</p>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<br>
+
+<div class="battle-plan">
+    {% for i in range(12) %}
+    <div class="{{ 'battle-plan-row-highlighted' if i == current_phase else 'battle-plan-row' }}">
+        {% for c in plan[i] %}
+        <img class="battle-plan-image" src="{{ url_for('static', filename='characters/' + get_character_of_player(c[0], c[1].unique_id).active_skin) }}">
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+
+<div class="battle-actives">
+    <h4>Active Characters</h4>
+    {% for character in active_characters %}
+    <p>{{ names[character.unique_id] }} / {{ character.health }}</p>
+    {% endfor %}
+</div>
+
+<div class="d-flex justify-content-center align-items-center">
+    <a class="btn btn-primary" href="/battle/advance?{{goto}}" role="button" id="advance">{{ 'Next' if active_characters|length == 0 else 'Advance' }}</a>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+    <div style="margin-left: 10px;">
+        <p>© 2023 Nova's Expanse</p>
+    </div>
+</footer>
+
+</body>
+</html>

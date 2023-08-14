@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col text-center">
+    <!-- Image -->
+    <img src="{{ url_for('static', filename='banners/' + banner.image) }}" alt="{{ banner.name }}" class="img-fluid", style="height: 50vh; width:auto;"> 
+    <div class="row">
+        <div class="col">
+            <a class="btn btn-primary" href="/summon/{{ banner.name }}/1" role="button" id="add_nova">Summon 1</a>
+        </div>
+        <div class="col">
+            <a class="btn btn-primary" href="/summon/{{ banner.name }}/10" role="button" id="add_nova">Summon 10</a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

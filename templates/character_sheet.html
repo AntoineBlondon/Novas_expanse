@@ -1,0 +1,115 @@
+<!-- templates/single_character.html -->
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="col-12 text-center">
+            <h1>{{ character.name }}</h1>
+        </div>
+        <!-- Stats & XP -->
+        <p>Aspect: {{ character.aspect }}</p>
+        <p>Level: {{ character.level }}</p>
+        <p>XP: {{ character.xp }}</p>
+        <p>Stats:<br>
+          {% for stat in stats %}
+          {{ stat }},
+          {% endfor %}
+        </p>
+        
+        <button type="button" class="btn btn-primary">Level Up</button>
+
+        <p>{{ template.story }}</p>
+
+        <p>Select Skin:</p>
+          <form method="POST" action="{{ url_for('update_skin') }}">
+            <input type="hidden" name="unique_id" value="{{ character.unique_id }}">
+            <select name="new_skin">
+                {% for skin in character.unlocked_skins %}
+                    <option value="{{ skin }}" {% if skin == character.active_skin %}selected{% endif %}>{{ skin }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Change Skin</button>
+          </form>
+        </select>
+
+        <!-- Other stats go here -->
+      </div>
+      <div class="col text-center">
+        <!-- Image -->
+        <img src="{{ url_for('static', filename='characters/' + character.active_skin) }}" alt="{{ character.name }}" class="img-fluid", style="height: 85vh; width:auto;">
+      </div>
+      <div class="col-3">
+        <!-- Skills & Gear -->
+        <p>Skills and Gear</p>
+        <div class="equipment-container">
+          {% for i in range(4) %}
+          <div class="item">
+            {% if character_equipment[i] %}
+            <a href="{{ url_for('remove_equipment', id=character.unique_id, slot=i) }}">
+            <img src="{{ url_for('static', filename='equipment/' + character_equipment[i].skin) }}" style="height: 75px; width: auto;">
+            <div class="item-info" id="{{ character_equipment[i].name }}">
+              <h4>{{ character_equipment[i].name }}</h4>
+              <p>{{ character_equipment[i].type }}</p>
+              <p>{{ character_equipment[i].description }}</p>
+              <p>Stat enhancement:<br>{{ character_equipment[i].stats }}</p>
+            </div>
+          </a>
+            {% else %}
+            <img src="{{ url_for('static', filename='equipment/no_item.png') }}" style="height: 75px; width: auto;">
+            <div class="item-info" id="no item">
+              <h4>No item</h4>
+            </div>
+            {% endif %}
+            
+          </div>
+          {% endfor %}
+        </div>
+        <div class="equipment-container">
+        {% for i in range(equipment|length) %}
+        <div class="item">
+          <a href="{{ url_for('switch_equipment', id=character.unique_id, equipment=i) }}">
+          <img src="{{ url_for('static', filename='equipment/' + equipment[i].skin) }}" style="height: 75px; width: auto;">
+          <div class="item-info" id="{{ equipment[i].name }}">
+            <h4>{{ equipment[i].name }}</h4>
+            <p>{{ equipment[i].type }}</p>
+            <p>{{ equipment[i].description }}</p>
+            <p>Stat enhancement:<br>{{ equipment[i].stats }}</p>
+          </div>
+        </a>
+        </div>
+        {% endfor %}
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <!-- Action Buttons -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <!-- Story Box -->
+        
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+      // In your JavaScript
+
+  $(document).ready(function() {
+    $('.item').hover(
+      function() { // When mouse enters the .item div
+        $(this).find('.item-info').fadeIn(); // Fade in the item info
+      }, function() { // When mouse leaves the .item div
+        $(this).find('.item-info').fadeOut(); // Fade out the item info
+      }
+    );
+  });
+
+
+</script>
+  
+{% endblock %}

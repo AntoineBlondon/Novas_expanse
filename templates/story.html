@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="arcs-container">
+    {% for arc in arcs %}
+    
+    <div class="arc-card">
+        <a href="{{ url_for('arc_page', name=arc) }}">
+            <img src="{{ get_arc(arc).image }}" alt="{{ arc }}">
+            <h2>{{ arc }}</h2>
+            <h3>Arc {{ roman(loop.index) }}</h3>
+        </a>
+    </div>
+    
+    {% endfor %}
+</div>
+{% endblock %}

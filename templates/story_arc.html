@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="chapters-container">
+    {% for chapter in chapters %}
+    
+    <div class="chapter-card">
+        <a href="{{ url_for('chapter_page', arc_name=arc_name, chapter_name=chapter) }}">
+            <h2>{{ chapter }}</h2>
+        </a>
+    </div>
+    
+    {% endfor %}
+</div>
+
+<a class="btn btn-primary back-button" href="{{ url_for('story_page') }}" role="button">Back</a>
+
+{% endblock %}

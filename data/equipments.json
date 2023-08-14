@@ -1,0 +1,212 @@
+{
+    "Wanderer's Cap": {
+        "name": "Wanderer's Cap",
+        "rarity": "Stella I",
+        "set": "Rustic Wanderer Set ",
+        "type": "Hat",
+        "description": "The preferred headgear of those who prefer the road less traveled. A slight boost to agility keeps you one step ahead of trouble.",
+        "skin": "wanderer_s_cap.png",
+        "stats": [
+            ""
+        ],
+        "skills": [
+            3.0,
+            3.0
+        ]
+    },
+    "Wanderer's Tonic": {
+        "name": "Wanderer's Tonic",
+        "rarity": "Stella I",
+        "set": "Rustic Wanderer Set",
+        "type": "Accessory",
+        "description": "A brew concocted from the wild herbs of the wilderness. A small sip boosts your health, allowing you to wander a bit farther.",
+        "skin": "wanderer_s_tonic.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Wanderer's Ring ": {
+        "name": "Wanderer's Ring ",
+        "rarity": "Stella I",
+        "set": "Rustic Wanderer Set",
+        "type": "Accessory",
+        "description": "A simple band worn by those who traverse the wilderness. A slight boost to recovery keeps your journey from being cut short.",
+        "skin": "wanderer_s_ring.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Wanderer's Clothes": {
+        "name": "Wanderer's Clothes",
+        "rarity": "Stella I",
+        "set": "Rustic Wanderer Set",
+        "type": "Clothing",
+        "description": "Garments made for the open road. A small increase to defence lets you brush off minor threats with ease.",
+        "skin": "wanderer_s_clothes.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Wanderer's Pebble": {
+        "name": "Wanderer's Pebble",
+        "rarity": "Stella I",
+        "set": "Rustic Wanderer Set",
+        "type": "Accessory",
+        "description": "A small stone carried for good luck. Gives a small boost to attack damage, helping you fend off any unfriendly encounters.",
+        "skin": "wanderer_s_pebble.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Navigator's Helmet": {
+        "name": "Navigator's Helmet",
+        "rarity": "Stella II",
+        "set": "Nebula Navigator's Set",
+        "type": "Hat",
+        "description": "A helmet designed for cosmic exploration. Provides a substantial boost to defence, allowing you to navigate through stellar challenges.",
+        "skin": "nebula_navigator_s_helmet.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Navigator's Elixir": {
+        "name": "Navigator's Elixir",
+        "rarity": "Stella II",
+        "set": "Nebula Navigator's Set",
+        "type": "Accessory",
+        "description": "An elixir brewed from rare celestial herbs. Offers a noticeable increase in health, keeping your vitality high amid the starry expanse.",
+        "skin": "nebula_navigator_s_elixir.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Navigator's Ring": {
+        "name": "Navigator's Ring",
+        "rarity": "Stella II",
+        "set": "Nebula Navigator's Set",
+        "type": "Accessory",
+        "description": "A band set with a fragment of a shooting star. Grants a significant increase to recovery, helping you regain strength more quickly in your celestial journey.",
+        "skin": "nebula_navigator_s_ring.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Navigator's Garb": {
+        "name": "Navigator's Garb",
+        "rarity": "Stella II",
+        "set": "Nebula Navigator's Set",
+        "type": "Clothing",
+        "description": "A suit tailored for interstellar exploration. Provides a substantial boost to agility, allowing for nimble navigation through the cosmos.",
+        "skin": "nebula_navigator_s_garb.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Navigator's Amulet": {
+        "name": "Navigator's Amulet",
+        "rarity": "Stella II",
+        "set": "Nebula Navigator's Set",
+        "type": "Accessory",
+        "description": "A celestial charm housing the essence of a nebula. Provides a substantial increase to attack damage, turning the might of the cosmos to your advantage.",
+        "skin": "nebula_navigator_s_amulet.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Mystic's Arcane Hat": {
+        "name": "Mystic's Arcane Hat",
+        "rarity": "Stella II",
+        "set": "Mystic's Arcana Set",
+        "type": "Hat",
+        "description": "Imbued with the knowledge of the universe, this hat boosts your Aspect Mastery, connecting your thoughts with the elements.",
+        "skin": "mystic_arcane_hat.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Mystic's Starlight Robe": {
+        "name": "Mystic's Starlight Robe",
+        "rarity": "Stella II",
+        "set": "Mystic's Arcana Set",
+        "type": "Clothing",
+        "description": "This robe amplifies your defensive abilities, enveloping you in a protective aura that diminishes the effect of incoming attacks.",
+        "skin": "mystic_starlight_robe.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Mystic's Lunar Amulet": {
+        "name": "Mystic's Lunar Amulet",
+        "rarity": "Stella II",
+        "set": "Mystic's Arcana Set",
+        "type": "Accessory",
+        "description": "This ring enhances your recovery speed, drawing upon the energy of the cosmos to replenish your strength.",
+        "skin": "mystic_lunar_amulet.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    },
+    "Mystic's Astral Codex": {
+        "name": "Mystic's Astral Codex",
+        "rarity": "Stella II",
+        "set": "Mystic's Arcana Set",
+        "type": "Weapon",
+        "description": "This codex significantly increases your attack damage, transmuting your energy into a blast of astral power.",
+        "skin": "mystic_astral_codex.png",
+        "stats": [
+            3.0,
+            3.0
+        ],
+        "skills": [
+            ""
+        ]
+    }
+}

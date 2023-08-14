@@ -1,0 +1,300 @@
+{
+    "Lyra": {
+        "name": "Lyra",
+        "world": "Pulsar Plains",
+        "rarity": 5,
+        "possible_aspects": [
+            "Space",
+            "Astral",
+            "Death"
+        ],
+        "attack_pattern": "-/A/-/-/A/-/-/A/-/-/A/-",
+        "story": "Born under the pulsating light of Pulsar Plains, Lyra grew up in sync with the rhythm of the distant star. This connection has shaped her abilities and made her a master in harnessing the astral energies. Her courage is as constant as the pulsar that lights up her home, and she is ready to fight and protect her world from any threats that may arise.",
+        "skins": [
+            "Lyra.png"
+        ],
+        "base_stats": [
+            600.0,
+            50.0,
+            40.0,
+            30.0,
+            20.0,
+            10.0,
+            30.0,
+            5.0,
+            150.0
+        ],
+        "growth_rate": [
+            60.0,
+            5.0,
+            4.0,
+            3.0,
+            2.0,
+            1.0,
+            3.0,
+            0.5,
+            1.5
+        ],
+        "guardian": "Pulsara",
+        "skills": [
+            "kill"
+        ]
+    },
+    "Isabella": {
+        "name": "Isabella",
+        "world": "Quantum Quagmire",
+        "rarity": 5,
+        "possible_aspects": [
+            "Void",
+            "Energy"
+        ],
+        "attack_pattern": "-/-/-/-/-/-/A/A/A/-/-/-",
+        "story": "Isabella hails from Void Vale, a world seemingly teetering on the edge of existence itself. Mastering the Void aspect, she can manipulate gravity to a terrifying degree, create miniature black holes to trap enemies or even teleport short distances by bending space around him.",
+        "skins": [
+            "Isabella.png"
+        ],
+        "base_stats": [
+            800.0,
+            60.0,
+            30.0,
+            40.0,
+            15.0,
+            20.0,
+            15.0,
+            10.0,
+            120.0
+        ],
+        "growth_rate": [
+            1.5,
+            2.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.5
+        ],
+        "guardian": "Quantia",
+        "skills": [
+            "Gravitate"
+        ]
+    },
+    "Vivienne": {
+        "name": "Vivienne",
+        "world": "Pulsar Plains",
+        "rarity": 5,
+        "possible_aspects": [
+            "Light",
+            "Life",
+            "Energy"
+        ],
+        "attack_pattern": "-/-/-/A/-/-/-/A/-/A",
+        "story": "Vivienne hails from the radiant world of Pulsar Plains, a realm drenched in iridescent energy fields and home to the ever-evolving bioluminescent flora. She embodies the Life Aspect, thriving amid the resplendent landscapes of her home.",
+        "skins": [
+            "Vivienne.png"
+        ],
+        "base_stats": [
+            600.0,
+            50.0,
+            40.0,
+            30.0,
+            20.0,
+            10.0,
+            30.0,
+            5.0,
+            150.0
+        ],
+        "growth_rate": [
+            1.5,
+            2.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.5
+        ],
+        "guardian": "Pulsara",
+        "skills": [
+            "Life Force"
+        ]
+    },
+    "Meldy": {
+        "name": "Meldy",
+        "world": "Dripdell",
+        "rarity": 5,
+        "possible_aspects": [
+            "Space",
+            "Matter",
+            "Life"
+        ],
+        "attack_pattern": "A/A/A/-/-/-/-/-/-/-/-/-",
+        "story": "Born in the royal slime castle, Meldy's life was always about serving others. But deep down, she dreamt of adventures, of discovering unknown places, and of making friends beyond her world. When the opportunity to explore the Nova's Expanse came, she dived right in, ready to serve, ready to fight, and ready to live her dream.",
+        "skins": [
+            "Meldy.png",
+            "Meldy_ghost.png"
+        ],
+        "base_stats": [
+            700.0,
+            20.0,
+            25.0,
+            40.0,
+            45.0,
+            40.0,
+            50.0,
+            10.0,
+            110.0
+        ],
+        "growth_rate": [
+            3.5,
+            1.5,
+            1.8,
+            2.2,
+            2.1,
+            2.1,
+            1.9,
+            1.0,
+            1.1
+        ],
+        "guardian": "Driplia",
+        "skills": [
+            "Splash"
+        ]
+    },
+    "Driplia": {
+        "name": "Driplia",
+        "world": "Dripdell",
+        "rarity": 6,
+        "possible_aspects": [
+            "Space",
+            "Matter",
+            "Light",
+            "Life"
+        ],
+        "attack_pattern": "A/-/-/A/-/-/A/A/-/-/-/-",
+        "story": "Driplia, once an ordinary slime, transformed into a majestic, glowing queen after a comet's radiant energy bestowed upon her sentience and extraordinary powers. As the Guardian of the radiant world of Dripdell, she leads her fellow slimes with wisdom and resolve, forming a harmonious society. Amidst threats from interstellar invaders attracted to their homeland's glow, Driplia shines as a beacon of hope, defending Dripdell with her powers of light, life, and matter. Despite adversities, she always reminds her subjects to celebrate the vibrant world they call home, embodying the essence of their resilience and joy.",
+        "skins": [
+            "Driplia.png",
+            "Driplia_snow.png"
+        ],
+        "base_stats": [
+            800.0,
+            30.0,
+            40.0,
+            50.0,
+            60.0,
+            25.0,
+            25.0,
+            30.0,
+            110.0
+        ],
+        "growth_rate": [
+            1.5,
+            2.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.5
+        ],
+        "guardian": "Driplia",
+        "skills": [
+            "Queen"
+        ]
+    },
+    "Iria": {
+        "name": "Iria",
+        "world": "Pulsar Plains",
+        "rarity": 4,
+        "possible_aspects": [
+            "Time",
+            "Space",
+            "Death"
+        ],
+        "attack_pattern": "-/-/-/-/-/-/-/A/-/-/A/A",
+        "story": "On the Pulsar Plains, where crime is as advanced as the technology, Officer Iria stands as a beacon of justice. Quick-witted, agile, and with a keen sense of right and wrong, she has been instrumental in maintaining order in the bustling metropolis. Whether it's high-speed chases, strategic standoffs, or complex negotiations, Iria tackles all with aplomb. Despite the tough exterior, she harbors a deep sense of compassion and fairness, making her a beloved figure among the inhabitants. Her adventures are a testament to her enduring belief - that no matter how advanced a society gets, justice should always prevail.",
+        "skins": [
+            "Iria.png",
+            "Iria_undercover.png",
+            "Iria_beach.png"
+        ],
+        "base_stats": [
+            800.0,
+            30.0,
+            40.0,
+            50.0,
+            60.0,
+            25.0,
+            25.0,
+            30.0,
+            110.0
+        ],
+        "growth_rate": [
+            1.5,
+            2.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.5
+        ],
+        "guardian": "Pulsara",
+        "skills": [
+            "Shoot"
+        ]
+    },
+    "Nebula Wisp": {
+        "name": "Nebula Wisp",
+        "world": "Void",
+        "rarity": 2,
+        "possible_aspects": [
+            "Time",
+            "Space",
+            "Astral",
+            "Void",
+            "Matter",
+            "Light",
+            "Mind",
+            "Life",
+            "Death",
+            "Energy"
+        ],
+        "attack_pattern": "-/-/-/A/-/-/A/-/-/A/-/-",
+        "story": "A Nebula Wisp",
+        "skins": [
+            "Nebula_wisp.png"
+        ],
+        "base_stats": [
+            600.0,
+            50.0,
+            40.0,
+            30.0,
+            20.0,
+            10.0,
+            30.0,
+            5.0,
+            150.0
+        ],
+        "growth_rate": [
+            1.5,
+            2.0,
+            2.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.5
+        ],
+        "guardian": "Void",
+        "skills": [
+            "Yo"
+        ]
+    }
+}

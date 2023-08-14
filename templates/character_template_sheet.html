@@ -1,0 +1,97 @@
+<!-- templates/single_character.html -->
+{% extends "base_admin.html" %}
+{% block content %}
+<form action="/admin/create-character-template" method="post">
+<div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="col-12 text-center">
+            <h1>{{ template.name }}</h1>
+        </div>
+        <!-- Stats & XP -->
+
+        <p>{{ template.story }}</p>
+
+        <!-- Other stats go here -->
+      </div>
+      <div class="col-6 text-center">
+        <!-- Image -->
+        <img src="{{ url_for('static', filename='characters/' + template.skins[0]) }}" alt="{{ template.name }}" class="img-fluid", style="height: 85vh; width:auto;">
+      </div>
+      <div class="col-3">
+        <!-- Skills & Gear -->
+        <p>Skills</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <!-- Action Buttons -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <!-- Story Box -->
+        <button type="submit" class="btn btn-primary">Edit Nova</button>
+      </div>
+    </div>
+  </div>
+</form>
+{% endblock %}
+
+<div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required>
+</div>
+<div class="form-group">
+    <label for="world">World</label>
+    <input type="text" class="form-control" id="world" name="world" placeholder="Enter World" required>
+</div>
+<div class="form-group">
+    <label for="rarity">Rarity</label>
+    <input type="text" class="form-control" id="rarity" name="rarity" placeholder="Enter Rarity" required>
+</div>
+<div class="form-group">
+    <label for="possible_aspects">Possible Aspects</label>
+    <select multiple class="form-control" id="possible_aspects" name="possible_aspects[]" required>
+    <option>Time</option>
+    <option>Space</option>
+    <option>Astral</option>
+    <option>Void</option>
+    <option>Matter</option>
+    <option>Light</option>
+    <option>Mind</option>
+    <option>Life</option>
+    <option>Death</option>
+    <option>Energy</option>
+    </select>
+</div>
+<div class="form-group">
+    <label for="attack_pattern">Attack Pattern</label>
+    <input type="text" class="form-control" id="attack_pattern" name="attack_pattern" placeholder="Enter Attack_Pattern" required>
+</div>
+<div class="form-group">
+    <label for="story">Story</label>
+    <input type="text" class="form-control" id="story" name="story" placeholder="Enter Story" required>
+</div>
+<div class="form-group">
+    <label for="Skins">Skins</label>
+    <input type="text" class="form-control" id="skins" name="skins" placeholder="Enter Skins" required>
+</div>
+<div class="form-group">
+    <label for="base_stats">Base Stats</label>
+    <input type="text" class="form-control" id="base_stats" name="base_stats" placeholder="Enter Base Stats" required>
+</div>
+<div class="form-group">
+    <label for="growth_rate">Growth Rate</label>
+    <input type="text" class="form-control" id="growth_rate" name="growth_rate" placeholder="Enter Growth Rate" required>
+</div>
+<div class="form-group">
+    <label for="guardian">Guardian</label>
+    <input type="text" class="form-control" id="guardian" name="guardian" placeholder="Enter Guardian" required>
+</div>
+<div class="form-group">
+    <label for="skills">Skills</label>
+    <input type="text" class="form-control" id="skills" name="skills" placeholder="Enter Skills" required>
+</div>
+<!-- Add other fields in the similar way -->
+<button type="submit" class="btn btn-primary">Create</button>

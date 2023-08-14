@@ -1,0 +1,45 @@
+<!-- templates/base.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nova's Expanse</title>
+  <!-- Add your CSS files here -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-links">
+        <a href="{{ url_for('main_page') }}">Home</a>
+        <a href="{{ url_for('characters_page') }}">Novas</a>
+        <a href="{{ url_for('summon_page') }}">Summon</a>
+        <a href="{{ url_for('story_page') }}">Story</a>
+    </div>
+    <div class="right-side">
+        <div class="starlight-counter">
+            <span id="starlight-count">{{ player.inventory.starlight }}</span>
+            <img src="{{ url_for('static', filename='other_images/starlight.png') }}" alt="Starlight">
+        </div>
+        <a class="logout_button" href="{{ url_for('logout') }}">Log out</a>
+    </div>
+</nav>
+
+
+
+  <!-- This is where the child templates will be inserted -->
+  {% block content %}{% endblock %}
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <div style="margin-left: 10px;">
+      <p>© 2023 Nova's Expanse</p>
+    </div>
+  </footer>
+  
+</body>
+
+    
+</html>

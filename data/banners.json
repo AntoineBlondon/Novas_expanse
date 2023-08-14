@@ -1,0 +1,137 @@
+{
+    "New Year's Banner": {
+        "name": "New Year's Banner",
+        "description": "Special New Year's banner with increased rates for festive items!",
+        "image": "banner.png",
+        "drops": {
+            "SummonableType.FEATURED": [
+                {
+                    "unique_id": "a79aba55b837404ea9322a3c0abea8ee",
+                    "name": "Isabella",
+                    "aspect": "Void",
+                    "level": 1,
+                    "xp": 0,
+                    "equipment": {},
+                    "unlocked_skins": [
+                        "Isabella.png"
+                    ],
+                    "active_skin": "Isabella.png",
+                    "unlocked_skills": [],
+                    "active_skills": [],
+                    "guardians_path": []
+                },
+                {
+                    "unique_id": "681519ebb8fe4ed292d72cf4a747e3b6",
+                    "name": "Iria",
+                    "aspect": "Space",
+                    "level": 1,
+                    "xp": 0,
+                    "equipment": {},
+                    "unlocked_skins": [
+                        "Iria.png",
+                        "Iria_undercover.png"
+                    ],
+                    "active_skin": "Iria.png",
+                    "unlocked_skills": [],
+                    "active_skills": [],
+                    "guardians_path": []
+                }
+            ],
+            "SummonableType.BEST_DROP": [
+                {
+                    "name": "Navigator's Amulet",
+                    "rarity": "Stella II",
+                    "set": "Nebula Navigator's Set",
+                    "type": "Accessory",
+                    "description": "A celestial charm housing the essence of a nebula. Provides a substantial increase to attack damage, turning the might of the cosmos to your advantage.",
+                    "skin": "nebula_navigator_s_amulet.png",
+                    "stats": [
+                        3.0,
+                        3.0
+                    ],
+                    "skills": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "Navigator's Ring",
+                    "rarity": "Stella II",
+                    "set": "Nebula Navigator's Set",
+                    "type": "Accessory",
+                    "description": "A band set with a fragment of a shooting star. Grants a significant increase to recovery, helping you regain strength more quickly in your celestial journey.",
+                    "skin": "nebula_navigator_s_ring.png",
+                    "stats": [
+                        3.0,
+                        3.0
+                    ],
+                    "skills": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "Navigator's Helmet",
+                    "rarity": "Stella II",
+                    "set": "Nebula Navigator's Set",
+                    "type": "Hat",
+                    "description": "A helmet designed for cosmic exploration. Provides a substantial boost to defence, allowing you to navigate through stellar challenges.",
+                    "skin": "nebula_navigator_s_helmet.png",
+                    "stats": [
+                        3.0,
+                        3.0
+                    ],
+                    "skills": [
+                        ""
+                    ]
+                }
+            ],
+            "SummonableType.GOOD_DROP": [
+                {
+                    "name": "Navigator's Garb",
+                    "rarity": "Stella II",
+                    "set": "Nebula Navigator's Set",
+                    "type": "Clothing",
+                    "description": "A suit tailored for interstellar exploration. Provides a substantial boost to agility, allowing for nimble navigation through the cosmos.",
+                    "skin": "nebula_navigator_s_garb.png",
+                    "stats": [
+                        3.0,
+                        3.0
+                    ],
+                    "skills": [
+                        ""
+                    ]
+                },
+                {
+                    "name": "Navigator's Elixir",
+                    "rarity": "Stella II",
+                    "set": "Nebula Navigator's Set",
+                    "type": "Accessory",
+                    "description": "An elixir brewed from rare celestial herbs. Offers a noticeable increase in health, keeping your vitality high amid the starry expanse.",
+                    "skin": "nebula_navigator_s_elixir.png",
+                    "stats": [
+                        3.0,
+                        3.0
+                    ],
+                    "skills": [
+                        ""
+                    ]
+                }
+            ],
+            "SummonableType.NORMAL_DROP": [
+                {
+                    "amount": 90
+                }
+            ]
+        },
+        "rates": {
+            "SummonableType.FEATURED_rate": 0,
+            "SummonableType.BEST_DROP_rate": 0,
+            "SummonableType.GOOD_DROP_rate": 0,
+            "SummonableType.NORMAL_DROP_rate": 0
+        },
+        "cost": 200,
+        "SummonableType.FEATURED_rate": 0.02,
+        "SummonableType.BEST_DROP_rate": 0.1,
+        "SummonableType.GOOD_DROP_rate": 0.2,
+        "SummonableType.NORMAL_DROP_rate": 0.6799999999999999
+    }
+}

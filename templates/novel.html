@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nova's Expanse</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="novel-container">
+        <div class="background"></div>
+        <div class="characters">
+            
+        </div>
+        <div class="dialogue-box">
+            <p class="speaker-name">Nora</p>
+            <p class="listener-name">Elise</p>
+            <p class="dialogue-text">Hi, how are you?</p>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    var scenes = {{ scenes|tojson }};
+    let currentSceneIndex = 0;
+
+
+    let isTyping = false;
+    
+function typeText(element, text, callback) {
+    let index = 0;
+    isTyping = true;
+
+    let replacedText = text.replace(/<username>/g, "{{username}}");
+
+    element.textContent = '';
+
+    function typing() {
+        if (isTyping && index < replacedText.length) {
+            element.textContent += replacedText.charAt(index);
+            index++;
+            setTimeout(typing, 50);  // Adjust this value to make typing faster/slower
+        } else {
+            isTyping = false;
+            if (callback) {
+                callback();
+            }
+        }
+    }
+    typing();
+
+    // Let's give an ability to finish typing on user demand:
+    element.onclick = function() {
+        if (isTyping) {
+            element.textContent = replacedText;
+            index = text.length;
+        } else {
+            callback();
+        }
+    }
+}
+
+// Similarly, for the spacebar press:
+document.addEventListener("keydown", function(event) {
+    if (event.code === "Space") {
+        if (isTyping) {
+            isTyping = false;
+            document.querySelector('.dialogue-text').textContent = scenes[currentSceneIndex].dialogue[currentDialogue].text.replace(/<username>/g, "{{username}}");;
+        } else {
+            nextDialogue();
+        }
+    }
+});
+
+function mapper(value, min1, max1, min2, max2) {
+    return (value - min1) * (max2 - min2) / (max1 - min1) + min2;
+}
+
+function loadScene(sceneIndex) {
+    let scene = scenes[sceneIndex];
+
+    // Load background
+    document.querySelector('.background').style.backgroundImage = `url(${scene.background})`;
+
+    // Load characters
+    let charactersDiv = document.querySelector('.characters');
+    charactersDiv.innerHTML = ''; // clear old characters
+    scene.characters.forEach(char => {
+        let charImg = document.createElement('img');
+        charImg.src = char.image;
+        charImg.id = char.name.toLowerCase(); // set id as lowercase character name
+        charImg.classList.add('character'); // add general class
+        charImg.classList.add('char-' + char.name.toLowerCase()); // add specific class
+        charImg.style.left = mapper(char.position, 0, 100, 11, 89) + 'vw';
+
+        // Reset animation to ensure it plays every time
+        charImg.style.animation = 'none';
+        setTimeout(() => {
+            charImg.style.animation = '';
+        }, 10);
+        charactersDiv.appendChild(charImg);
+    });
+
+    nextDialogue()
+}
+
+function highlightSpeaker(speakerName) {
+    // Remove glow from all characters
+    document.querySelectorAll('.character').forEach(charElem => {
+        charElem.classList.remove('glow');
+    });
+
+    // Add glow to the speaker
+    const speakerElem = document.getElementById(speakerName.toLowerCase());
+    if (speakerElem) {
+        speakerElem.classList.add('glow');
+    }
+}
+
+    let currentDialogue = -1;
+
+    function nextDialogue() {
+        // Remove the "character-speaking" class from all characters:
+        const allCharacters = document.querySelectorAll('.character');
+        allCharacters.forEach(char => char.classList.remove('character-speaking'));
+    
+        currentDialogue++;
+        if (currentDialogue < scenes[currentSceneIndex].dialogue.length) {
+            let dialogue = scenes[currentSceneIndex].dialogue[currentDialogue];
+    
+            // Add the "character-speaking" class to the speaking character:
+            const speakingCharacter = document.getElementById(dialogue.speaker.toLowerCase());
+            if (speakingCharacter) {
+                highlightSpeaker(dialogue.speaker);
+                speakingCharacter.classList.add('character-speaking');
+            }
+    
+            document.querySelector('.speaker-name').innerText = dialogue.speaker.replace(/&/g, ' ').replace(/<username>/g, "{{username}}");
+            if("listener" in dialogue) document.querySelector('.listener-name').innerText = "To " + dialogue.listener.replace(/&/g, ' ').replace(/<username>/g, "{{username}}");
+            else document.querySelector('.listener-name').innerText = "";
+                document.querySelector('.dialogue-text').textContent = ""; // Clear current text
+            typeText(document.querySelector('.dialogue-text'), dialogue.text);
+        } else {
+            // Move to next scene if available:
+            currentDialogue = -1;
+            if (++currentSceneIndex < scenes.length) {
+                loadScene(currentSceneIndex);
+            } else {
+                let battle = "{{ battle }}";
+                if(battle != "" && battle != "None") {
+                    var battleName = "{{battle}}";
+                    var chapterName = "{{chapter_name}}";
+                    window.location.href = "/battle/specific?battle_name=" + battleName + "&chapter_name=" + chapterName;
+                } else {
+                    window.location.href = '/story/arc/{{ arc_name }}/chapter/{{ chapter_name }}';
+                } 
+                
+            }
+        }
+    }
+    
+
+
+
+    loadScene(currentSceneIndex);
+</script>
+
+<svg style="height:0;width:0;position:absolute;">
+    <filter id="glow">
+        <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+        <feMerge>
+            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+</svg>
+
+</html>

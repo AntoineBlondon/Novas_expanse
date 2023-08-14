@@ -1,0 +1,14 @@
+<!-- templates/main.html -->
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to Nova's Expanse!</h1>
+<p>Your journey starts here...</p>
+{% for mail in mails %}
+{{mail}}
+<br>
+{% endfor %}
+
+{% if mails|length > 0 %}
+<a class="btn btn-primary" href="/claim_mail" role="button" id="add_nova">Claim Mail</a>
+{% endif %}
+{% endblock %}

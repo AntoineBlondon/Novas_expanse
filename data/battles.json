@@ -1,0 +1,520 @@
+{
+    "simple_battle": {
+        "terrain": "",
+        "characters": [
+            {
+                "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                "owner": "enemy",
+                "health": 600.0,
+                "stats": [
+                    600.0,
+                    50.0,
+                    40.0,
+                    30.0,
+                    20.0,
+                    10.0,
+                    30.0,
+                    5.0,
+                    150.0
+                ],
+                "bonus_stats": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "dead": false,
+                "state": null
+            },
+            {
+                "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                "owner": "enemy",
+                "health": 600.0,
+                "stats": [
+                    600.0,
+                    50.0,
+                    40.0,
+                    30.0,
+                    20.0,
+                    10.0,
+                    30.0,
+                    5.0,
+                    150.0
+                ],
+                "bonus_stats": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "dead": false,
+                "state": null
+            }
+        ],
+        "active_characters": [],
+        "plan": [
+            [],
+            [],
+            [],
+            [
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ]
+            ],
+            [],
+            [],
+            [
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ]
+            ],
+            [],
+            [],
+            [
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "9aab2b459c6f4706b2434e735b63141d",
+                        "name": "Nebula Wisp",
+                        "aspect": "Astral",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": [],
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ],
+                [
+                    "enemy",
+                    {
+                        "unique_id": "1afb243a5d7f4c27babbbdfb34ae4385",
+                        "name": "Nebula Wisp",
+                        "aspect": "Time",
+                        "level": 1,
+                        "xp": 0,
+                        "equipment": {},
+                        "unlocked_skins": [
+                            "Nebula_wisp.png"
+                        ],
+                        "active_skin": "Nebula_wisp.png",
+                        "unlocked_skills": [],
+                        "active_skills": [],
+                        "guardians_path": []
+                    }
+                ]
+            ],
+            [],
+            []
+        ],
+        "turn": 0,
+        "validated": false,
+        "rewards": {
+            "starlight": 100
+        }
+    }
+}

@@ -1,0 +1,306 @@
+{
+    "story": [
+        "The Novas"
+    ],
+    "arcs": {
+        "The Novas": {
+            "chapters": [
+                "The forgotten art of summoning"
+            ],
+            "image": "/static/backgrounds/Magical_classroom.png"
+        }
+    },
+    "chapters": {
+        "The forgotten art of summoning": [
+            "The Forbidden Book"
+        ]
+    },
+    "series": {
+        "The Forbidden Book": {
+            "scenes": [
+            "episode_1_scene_1",
+            "episode_1_scene_2",
+            "episode_1_scene_3",
+            "episode_1_scene_4",
+            "episode_1_scene_5",
+            "episode_1_scene_6",
+            "episode_1_scene_7",
+            "episode_1_scene_8"
+        ],
+        "battle": null
+    }
+    },
+    "scenes": {
+        "episode_1_scene_1": {
+            "background": "/static/backgrounds/Magical_classroom.png",
+            "characters": [
+                {
+                    "name": "Naomi",
+                    "image": "/static/characters/Schoolgirl_1.png",
+                    "position": 70
+                },
+                {
+                    "name": "Janette",
+                    "image": "/static/characters/Schoolgirl_4.png",
+                    "position": 30
+                }
+            ],
+            "dialogue": [
+                {
+                    "speaker": "Naomi",
+                    "listener": "Janette",
+                    "text": "Please tell me the answer, Janette!"
+                },
+                {
+                    "speaker": "Janette",
+                    "listener": "Naomi",
+                    "text": "You have to figure it out yourself, Naomi! I won't be with you at the exam!"
+                },
+                {
+                    "speaker": "Naomi",
+                    "listener": "Janette",
+                    "text": "Come on, Janette!"
+                },
+                {
+                    "speaker": "Janette",
+                    "listener": "Naomi",
+                    "text": "A no is a no."
+                },
+                {
+                    "speaker": "Naomi",
+                    "listener": "Herself",
+                    "text": "I have an Idea..."
+                },
+                {
+                    "speaker": "Naomi",
+                    "listener": "you",
+                    "text": "Hey <username>!"
+                },
+                {
+                    "speaker": "Naomi",
+                    "listener": "you",
+                    "text": "This question is too hard. Can you help me wi--"
+                }
+            ]
+        },
+
+        "episode_1_scene_2": {
+            "background": "/static/backgrounds/Magical_classroom.png",
+            "characters": [
+                {
+                    "name": "Naomi",
+                    "image": "/static/characters/Schoolgirl_1.png",
+                    "position": 90
+                },
+                {
+                    "name": "Janette",
+                    "image": "/static/characters/Schoolgirl_4.png",
+                    "position": 10
+                },
+                {
+                    "name": "Ms.&Nora",
+                    "image": "/static/characters/Teacher.png",
+                    "position": 50
+                }
+            ],
+            "dialogue": [
+                {
+                    "speaker": "Ms.&Nora",
+                    "listener": "class",
+                    "text": "Ok students, this class has ended, do not forget to do the assignment for next week.\n Have a nice week end."
+                },
+                {
+                    "speaker": "Naomi",
+                    "listener": "Ms.&Nora",
+                    "text": "Hey Miss! Can I join <username> and Elise for today's extra classes? I don't feel well about this chapter..."
+                },
+                {
+                    "speaker": "Ms.&Nora",
+                    "listener": "Naomi",
+                    "text": "Yes of course, we will meet in the library in half an hour."
+                },
+                {
+                    "speaker": "Naomi",
+                    "listener": "Ms.&Nora",
+                    "text": "Thank you Miss!"
+                }
+            ]
+        },
+        "episode_1_scene_3": {
+            "background": "/static/backgrounds/Magical_classroom.png",
+            "characters": [
+                {
+                    "name": "Naomi",
+                    "image": "/static/characters/Schoolgirl_1.png",
+                    "position": 50
+                }
+            ],
+            "dialogue": [
+                {
+                    "speaker": "Naomi",
+                    "listener": "you",
+                    "text": "I'll see you then~ <username>!"
+                }
+            ]
+        },
+        "episode_1_scene_4": {
+            "background": "/static/backgrounds/Library.png",
+            "dialogue":[
+                {
+                    "speaker": "Narrator",
+                    "text": "You go to the library after today's class."
+                }
+            ]
+        },
+        "episode_1_scene_5": {
+            "background": "/static/backgrounds/Library.png",
+            "characters": [
+                {
+                    "name": "Elise",
+                    "image": "/static/characters/Schoolgirl_2.png",
+                    "position": 30
+                },
+                {
+                    "name": "Naomi",
+                    "image": "/static/characters/Schoolgirl_1.png",
+                    "position": 70
+                }
+            ],
+            "dialogue":[
+                {
+                    "speaker": "<username>",
+                    "listener": "Elise and Naomi",
+                    "text": "Hi girls! Isn't Ms. Nora here yet?"
+                },
+                {
+                    "speaker": "Elise",
+                    "listener": "you",
+                    "text": "No, she's not, she said we had to start without her, she'll be late."
+                },
+                {
+                    "speaker": "<username>",
+                    "listener": "Elise",
+                    "text": "Oh, okay."
+                },
+                {
+                    "speaker": "Elise",
+                    "listener": "you",
+                    "text": "Hey, <username>, can I talk to you in private?"
+                }
+            ]
+        },
+        "episode_1_scene_6": {
+            "background": "/static/backgrounds/Library.png",
+            "characters": [
+                {
+                    "name": "Elise",
+                    "image": "/static/characters/Schoolgirl_2.png",
+                    "position": 50
+                }
+            ],
+            "dialogue":[
+                {
+                    "speaker": "Elise",
+                    "listener": "you",
+                    "text": "Ok, we're good now. Do you remember the forbidden book you wanted to get your hands on?"
+                },
+                {
+                    "speaker": "<username>",
+                    "listener": "Elise",
+                    "text": "The one about Nova summoning? Yes, I remember it very well."
+                },
+                {
+                    "speaker": "Elise",
+                    "listener": "you",
+                    "text": "Well, the book is in the library right now. Do you want to take a look?"
+                },
+                {
+                    "speaker": "<username>",
+                    "listener": "Elise",
+                    "text": "You mean, in the forbidden section?"
+                },
+                {
+                    "speaker": "Elise",
+                    "listener": "you",
+                    "text": "Yes, of course, but the guardian fell asleep on his desk. It is now or never."
+                },
+                {
+                    "speaker": "<username>",
+                    "listener": "Elise",
+                    "text": "Okay, I'll try to be quick."
+                }
+            ]
+        },
+        "episode_1_scene_7": {
+            "background": "/static/backgrounds/Library_forbidden.png",
+            "dialogue":[
+                {
+                    "speaker": "Narrator",
+                    "text": "You go to the forbidden section of the library."
+                },
+                {
+                    "speaker": "<username>",
+                    "text": "Where is it?"
+                },
+                {
+                    "speaker": "<username>",
+                    "text": "................"
+                },
+                {
+                    "speaker": "<username>",
+                    "text": "Here!"
+                },
+                {
+                    "speaker": "Narrator",
+                    "text": "You open the book, with the enthusiasm of a child opening a present."
+                },
+                {
+                    "speaker": "<username>",
+                    "text": "The art of summoning!"
+                },
+                {
+                    "speaker": "Narrator",
+                    "text": "You look around quickly, no one is here."
+                },
+                {
+                    "speaker": "<username>",
+                    "text": "Hmm... Let's try something simple first."
+                },
+                {
+                    "speaker": "Narrator",
+                    "text": "As you read outloud the first page of the book, you notice something isn't right. But you continue reading anyways"
+                },
+                {
+                    "speaker": "Narrator",
+                    "text": "The more you read, the more the book seems to glow."
+                },
+                {
+                    "speaker": "Narrator",
+                    "text": "But before you have time to finish the sentence, the light envelops your whole field of vision."
+                },
+                {
+                    "speaker": "<username>",
+                    "text": "Wait, wh--"
+                }
+            ]
+        },
+        "episode_1_scene_8": {
+            "background": "/static/backgrounds/Sunset_lake.png",
+            "dialogue":[
+                {
+                    "speaker": "Narrator",
+                    "text": "When the light starts to fade, you notice you are not at the library anymore."
+                },
+                {
+                    "speaker": "<username>",
+                    "text": "What happened?"
+                },
+                {
+                    "speaker": "???",
+                    "listener": "you",
+                    "text": "Hum... Hello?"
+                }
+            ]
+        }
+    }
+}
